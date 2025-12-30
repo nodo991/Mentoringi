@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<h1>Job Application Form</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+995-555-00-00">
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Job Details</legend>
+
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position">
+            <option value="frontend">Frontend Dev</option>
+            <option value="backend">Backend Dev</option>
+            <option value="fullstack">Full Stack Dev</option>
+        </select>
+
+        <br><br>
+
+        <p>Experience Level:</p>
+
+        <input type="radio" id="junior" name="experience" value="junior">
+        <label for="junior">Junior</label><br>
+
+        <input type="radio" id="mid" name="experience" value="mid">
+        <label for="mid">Mid-Level</label><br>
+
+        <input type="radio" id="senior" name="experience" value="senior">
+        <label for="senior">Senior</label>
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Skills</legend>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">JavaScript</label><br>
+
+        <input type="checkbox" id="react" name="skills" value="react">
+        <label for="react">React</label>
+    </fieldset>
+
+    <br>
+    <label for="resume">Upload Resume (PDF only):</label>
+    <input type="file" id="resume" name="resume" accept="application/pdf">
+    <br><br>
+
+    <label for="cover">Cover Letter:</label><br>
+    <textarea id="cover" name="cover" rows="5"></textarea>
+
+    <br><br>
+    <input type="checkbox" id="terms" required>
+    <label for="terms">I agree to the Terms and Conditions</label>
+
+    <br><br>
+
+    <button type="submit">Apply Now</button>
+
+</form>
+
+</body>
+</html>

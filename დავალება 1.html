@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+</head>
+<body>
+<h1>Travel Reservation Form</h1>
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+995-5XX-XX-XX">
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Travel Information</legend>
+
+        <label for="package">Select a package:</label>
+        <select id="package">
+            <option>Package 1</option>
+            <option>Package 2</option>
+        </select>
+        <br><br>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination">
+    </fieldset>
+    <br>
+    <fieldset>
+        <label for="arrival">Arrival Date:</label>
+        <input type="date" id="arrival">
+        <br><br>
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure">
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Number of People:</legend>
+        <input type="number" min="1">
+    </fieldset>
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
